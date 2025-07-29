@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CommerceAdmin.Application\CommerceAdmin.Application.csproj" />
     <ProjectReference Include="..\CommerceAdmin.Domain\CommerceAdmin.Domain.csproj" />
   </ItemGroup>
 

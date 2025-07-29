@@ -1,23 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace CommerceAdmin.API.DTO.Request
+﻿namespace CommerceAdmin.Domain.Entities
 {
-    public record RegisterProductDTO
+    public class ProductEntity
     {
-        [Required]
+        public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
-        [Required]
         public string Description { get; set; } = string.Empty;
-        [Required]
         public string Sku { get; set; } = string.Empty;
-        [Required]
         public string Category { get; set; } = string.Empty;
-        [Required]
         public decimal Price { get; set; }
-        [Required]
         public List<string> ImagesUrl { get; set; } = new List<string>();
-        [Required]
-        public int Stock { get; set; }
-
+        public int Stock { get; set; } 
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

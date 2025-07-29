@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using CommerceAdmin.Domain.Entities;
 
 namespace CommerceAdmin.API.Data
 {
@@ -8,7 +9,7 @@ namespace CommerceAdmin.API.Data
         {
         }
 
-        public DbSet<Entities.ProductEntity> Products { get; set; }
+        public DbSet<Domain.Entities.ProductEntity> Products { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

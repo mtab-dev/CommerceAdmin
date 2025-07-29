@@ -20,4 +20,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CommerceAdmin.Application\CommerceAdmin.Application.csproj" />
+    <ProjectReference Include="..\CommerceAdmin.Domain\CommerceAdmin.Domain.csproj" />
+    <ProjectReference Include="..\CommerceAdmin.Infrastructure\CommerceAdmin.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

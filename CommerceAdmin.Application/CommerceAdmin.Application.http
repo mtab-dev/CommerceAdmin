@@ -1,6 +1,0 @@
-@CommerceAdmin.Application_HostAddress = http://localhost:5013
-
-GET {{CommerceAdmin.Application_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

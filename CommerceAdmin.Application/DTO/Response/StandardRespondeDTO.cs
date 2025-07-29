@@ -1,4 +1,4 @@
-﻿namespace CommerceAdmin.API.DTO.Response
+﻿namespace CommerceAdmin.DTO.Response
 {
     public record StandardRespondeDTO
     {
